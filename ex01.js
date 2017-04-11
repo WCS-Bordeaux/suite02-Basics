@@ -12,3 +12,12 @@
         getCharAt("salut", 4); // "t"
 
 */
+
+function getCharAt(str, position){
+    if(str.length >= position){
+        return str[position];        
+    }
+    else{
+        return '';
+    }
+}
