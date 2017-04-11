@@ -16,3 +16,15 @@
         - Array.indexOf
 
 */
+
+function searchOcc(arr, occurence){
+    for(i = 0; i < arr.length; i++){
+        if(arr[i] === occurence){
+            return i;
+        }
+    }
+    return -1;
+}
+
+console.log(searchOcc(["Salut", "ça", "va", "?"], "va"));
+console.log(searchOcc(["Salut", "ça", "va", "?"], "Ahahahah"));
