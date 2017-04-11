@@ -15,3 +15,14 @@
         editArrayAt(arr, 2, "va?"); // ["bonjour", "ça", "va?"]
 
 */
+
+function editArrayAt(array, pos, val){
+    if(array.length >= pos){
+        array[pos] = val;        
+        return array;    
+    }
+    else{
+        return '';
+    }
+}
+

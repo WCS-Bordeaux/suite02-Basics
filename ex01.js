@@ -13,9 +13,11 @@
 
 */
 
-function getCharAt(str, position){
-    if(str.length >= position){
-        return str[position];        
+
+function getCharAt(str, pos){
+    if(str.length >= pos ){
+        return str[pos];
+
     }
     else{
         return '';
