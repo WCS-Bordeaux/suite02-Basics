@@ -13,3 +13,11 @@
         copyArray(["bonjour", 4, 5]); // ["bonjour", 4, 5]
 
 */
+
+function copyArray(array){
+    newArray = array;
+    for(i = 0; i < array.length; i++){
+        newArray[i] = array[i];
+    }
+    return newArray;
+}
