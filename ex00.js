@@ -40,13 +40,4 @@
 
         Vous devez respecter les prototypes.
 
-
-    ### VALEUR DE RETOURS SPECIFIQUES
-
-        Lorsqu'il vous ai demandé une valeur de retour sur une fonction,
-        il se peut que vous vous demandiez quoi retourner en cas d'erreur.
-
-        La valeur par défaut suffira dans la plupart des cas.
-        A vous de déduire quelle est la valeur par défault à renvoyer.
-
 */

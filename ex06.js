@@ -4,6 +4,10 @@
 
     Ecrire une fonction "getValuesByType",
     qui donne un tableau avec uniquement les valeurs d'un type en particulier depuis un autre tableau.
+    
+    
+    Nous testerons avec des nombres, chaines de caractères et avec undefined.
+
 
     Prototype:
         arr getValuesByType(arr, type);
