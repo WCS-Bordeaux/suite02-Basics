@@ -16,3 +16,7 @@
         - Array.indexOf
 
 */
+
+function searchOcc(arr, occ) {
+    return arr.indexOf(occ);
+}
