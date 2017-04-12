@@ -16,3 +16,29 @@
         Array.sort
 
 */
+
+function sortNumbers(arr) {
+    let newArr = [];
+    newArr[0] = arr[0];
+    let i = 1;
+    let len = arr.length;
+    while( i < len ) {
+        let currentVal = arr[i];
+        if (currentVal < newArr[0]) {
+            newArr.unshift(currentVal);
+        }
+        else {
+            let j = 0;
+            let lenj = newArr.length;
+            while (j < lenj) {
+                if (currentVal > newArr[j]) {
+                    newArr.splice(newArr[j + 1], 0, currentVal);
+                    break;
+                }
+                j++;
+            }
+        }
+        i++;
+    }
+    return newArr;
+}
