@@ -18,3 +18,16 @@
     Attention, la fonction ne doit pas modifier le tableau modèle.
 
 */
+
+function getValuesByType(arr, type){
+    var arrayToRet = [];
+    var j = 0;
+
+    for(i = 0 ; i < arr.length ; i++){
+        if(typeof(arr[i]) === type){
+            arrayToRet[j] = arr[i];
+            j++;
+        }
+    }
+    return arrayToRet;
+}

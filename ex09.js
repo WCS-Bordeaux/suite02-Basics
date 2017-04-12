@@ -16,3 +16,27 @@
         Array.sort
 
 */
+
+function sortNumbers(arr) {
+    var indice = 0;
+    var newArr = [];
+    var minNumber = Infinity;
+    // On récupère la taille du tableau car on va supprimer des éléments dedans
+    var arrLength = arr.length;
+    
+    for (let j = 0; j < arrLength; j++) {
+
+        for (let i = 0; i < arr.length; i++) {
+
+            if (arr[i] < minNumber) {
+                minNumber = arr[i];
+                indice = i;
+            }
+
+        }
+        newArr.push(minNumber);
+        arr.splice(indice, 1);
+        minNumber = Infinity;
+    }
+    return newArr;
+}
