@@ -12,3 +12,7 @@
         getCharAt("salut", 4); // "t"
 
 */
+
+function getCharAt(str, position) {
+   return str[position];
+}
