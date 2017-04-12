@@ -19,7 +19,4 @@ function getCharAt(str, pos){
         return str[pos];
 
     }
-    else{
-        return '';
-    }
 }
