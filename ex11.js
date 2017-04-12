@@ -11,3 +11,8 @@
         insertAt(["Bonjour", "va?"], "ça", 1); // ["Bonjour", "ça", "va?"]
 
 */
+
+function insertAt(arr, occurence, position) {
+   arr.splice(position, 0, occurence);
+   return arr;
+}
