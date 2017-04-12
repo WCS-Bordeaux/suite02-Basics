@@ -16,3 +16,15 @@
     La fonction ne doit pas modifier les tableaux initiaux.
 
 */
+
+function concatArrays(arr1, arr2) {
+    let newArr = [];
+    let i = 0;
+    let len = arr2.length;
+    newArr = arr1.splice(0, len);
+    while( i < len ) {
+        newArr.push(arr2[i]);
+        i++;
+    }
+    return newArr;
+}
