@@ -16,3 +16,19 @@
         Array.sort
 
 */
+
+function sortNumbers(arr) {
+   var sortedArr = [];
+   while (arr.length > 0) {
+      var n = getSmallestNumber(arr);
+      arr.splice(arr.indexOf(n), 1);
+      sortedArr.push(n);
+   } return sortedArr;
+}
+
+function getSmallestNumber(arr) {
+   for (var i = 1, n = arr[0]; i < arr.length; i++) {
+      if (arr[i] < n) n = arr[i];
+   }
+   return n;
+}

@@ -16,3 +16,9 @@
     La fonction ne doit pas modifier les tableaux initiaux.
 
 */
+
+function concatArrays(arr1, arr2) {
+   for (let i = 0; i < arr2.length; i++) {
+      arr1.push(arr2[i]);
+   } return arr1;
+}
