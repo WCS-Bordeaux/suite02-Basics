@@ -17,10 +17,7 @@
 */
 
 function editArrayAt(arr, position, value) {
-    Array.isArray(arr) && parseInt(position) >= 0 ? rep() : null;
-
-    function rep() {
+    if( Array.isArray(arr) && parseInt(position) ) {
         arr[parseInt(position)] = value;
     }
-
 }
