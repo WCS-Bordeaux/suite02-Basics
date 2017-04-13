@@ -14,5 +14,5 @@
 */
 
 function getCharAt(str, position) {
-   return str[position];
+   return str[position] || "";
 }

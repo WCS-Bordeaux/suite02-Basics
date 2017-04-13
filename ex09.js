@@ -18,12 +18,22 @@
 */
 
 function sortNumbers(arr) {
-   var sortedArr = [];
-   while (arr.length > 0) {
-      var n = getSmallestNumber(arr);
-      arr.splice(arr.indexOf(n), 1);
-      sortedArr.push(n);
-   } return sortedArr;
+   var arrCopy = copyArray(arr);
+   arr.length = 0;
+
+   while (arrCopy.length > 0) {
+      var n = getSmallestNumber(arrCopy);
+      arrCopy.splice(arrCopy.indexOf(n), 1);
+      arr.push(n);
+   }
+}
+
+function copyArray(arr) {
+   var newArr = [];
+   for (let i = 0; i < arr.length; i++) {
+      newArr[i] = arr[i];
+   }
+   return newArr;
 }
 
 function getSmallestNumber(arr) {

@@ -15,5 +15,5 @@
 */
 
 function editStringAt(str, position, char) {
-   return str.substr(0, position) + char + str.substr(position+1, str.length);
+   return str.substr(0, position) + char + str.substr(position+char.length, str.length);
 }
