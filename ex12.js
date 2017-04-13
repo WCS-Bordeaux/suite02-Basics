@@ -11,9 +11,36 @@
 
     Exemples:
         splitStr("Bonjour comment tu vas ? ça va merci.", " ");
+
         // ["Bonjour", "comment", "tu", "vas", "?", "ça", "va", "merci."]
 
     Fonctions interdites:
         - String.split
 
 */
+
+function splitStr(str, occ) {
+
+    let arr = [],
+        tmp = "",
+        i = 0,
+        len = str.length;
+
+    while( i < len ) {
+        if( i === (len-1) ) {
+            arr.push(tmp);
+            break;
+        }
+        if(str[i] !== occ) {
+            tmp += str[i];
+        }
+        else {
+            arr.push(tmp);
+            tmp = "";
+        }
+        i++;
+
+
+    }
+    return arr;
+}
