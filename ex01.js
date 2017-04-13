@@ -23,5 +23,3 @@ function getCharAr(theString, theIndex) {
         return false;
     }
 }
-
-console.log(getCharAr("plouf" , 2));
