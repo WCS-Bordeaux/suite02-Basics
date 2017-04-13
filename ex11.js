@@ -11,3 +11,15 @@
         insertAt(["Bonjour", "va?"], "ça", 1); // ["Bonjour", "ça", "va?"]
 
 */
+
+
+function insertAt(arr, occ, position) {
+    if(Array.isArray(arr)) {
+        arr.splice(position, 0, occ);
+        return arr;
+    }
+    else {
+        return false;
+    }
+
+}
