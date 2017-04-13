@@ -21,7 +21,7 @@
 function splitStr(str, occurence) {
    var arr = [], lastSplit = 0;
    for (let i = 0; i < str.length; i++) {
-      if (str[i] === ' ') {
+      if (str[i] === occurence) {
          arr.push(str.substr(lastSplit, i - lastSplit));
          lastSplit = i+1;
       } else if (i == str.length-1) {
