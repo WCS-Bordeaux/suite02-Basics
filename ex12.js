@@ -26,8 +26,8 @@ function splitStr(str, occ) {
         i = 0,
         len = str.length;
 
-    while( i < len ) {
-        if( i === (len-1) ) {
+    while( i <= len ) {
+        if( i === (len) ) {
             arr.push(tmp);
             break;
         }
@@ -44,3 +44,5 @@ function splitStr(str, occ) {
     }
     return arr;
 }
+
+console.log(splitStr("Bonjour comment tu vas ? ça va merci.", " "));
