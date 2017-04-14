@@ -7,7 +7,7 @@
     Nous ne passerons que des nombres entiers positifs.
 
     Prototype:
-        void doubleSortNumbers(arr1, arr2);
+        array doubleSortNumbers(arr1, arr2);
 
     Exemples:
         doubleSortNumbers([4, 3, 5, 2], [6, 3, 2]); // [2, 2, 3, 3, 4, 5, 6]
@@ -21,9 +21,15 @@ function doubleSortNumbers(arr1, arr2) {
 
     let i = 0;
     let newArr = [];
+    let arrrep = [];
 
     for(v of arr1) {
-        newArr[v] = 0;
+        if(newArr[v] === 0) {
+            newArr[v] += 1;
+        }
+        else {
+            newArr[v] = 0;
+        }
     }
     for (w of arr2) {
         if(newArr[w] === 0) {
@@ -34,15 +40,14 @@ function doubleSortNumbers(arr1, arr2) {
         }
     }
     for (k in newArr) {
-        arr1[i] = parseInt(k);
-        arr2[i] = parseInt(k);
+        arrrep[i] = parseInt(k);
         i++;
         let x = 0;
         while( x < newArr[k] ) {
-            arr1[i] = parseInt(k);
-            arr2[i] = parseInt(k);
+            arrrep[i] = parseInt(k);
             x++;
             i++;
         }
     }
+    return arrrep;
 }
