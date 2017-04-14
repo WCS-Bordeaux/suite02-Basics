@@ -44,5 +44,3 @@ function splitStr(str, occ) {
     }
     return arr;
 }
-
-console.log(splitStr("Bonjour comment tu vas ? ça va merci.", " "));
