@@ -18,13 +18,26 @@
 */
 
 function concatArrays(arr1, arr2) {
-    let newArr = [];
-    let i = 0;
-    let len = arr2.length;
-    newArr = arr1.splice(0, len);
+    let newArr = [],
+        i = 0,
+        len = 0,
+        len2 = 0;
+    if(arr1) {
+        len = arr1.length;
+    }
+    if(arr2) {
+        len2 = arr2.length;
+    }
+    // newArr = arr1.splice(0, arr1.length);
     while( i < len ) {
+        newArr.push(arr1[i]);
+        i++;
+    }
+    i = 0;
+    while( i < len2 ) {
         newArr.push(arr2[i]);
         i++;
     }
+
     return newArr;
 }
