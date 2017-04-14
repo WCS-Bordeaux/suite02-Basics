@@ -20,3 +20,16 @@
         // ["Oulala", "ça", "fait", "beaucoup", "de", "crochets!!!", "Pourtant c'est la même chose quasiment !"]
 
 */
+
+function getValuesFrom3DArray(arr) {
+   var finalArr = [];
+   for (let x = 0; x < arr.length; x++) {
+      var layer = arr[x];
+      for (let y = 0; y < layer.length; y++) {
+         var layer2 = layer[y];
+         for (let z = 0; z < layer2.length; z++) {
+            finalArr.push(layer2[z]);
+         }
+      }
+   } return finalArr;
+}

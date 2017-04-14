@@ -16,3 +16,11 @@
         - Array.indexOf
 
 */
+
+function searchOcc(arr, occurence) {
+   for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === occurence) {
+         return i;
+      }
+   } return -1;
+}
