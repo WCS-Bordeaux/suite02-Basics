@@ -16,10 +16,10 @@
 
 
 function editStringAt(str, pos, char) {
-    str = str.toString();
-    if(parseInt(pos) >= 0) {
+    str = str.toString() || "";
+    // if(parseInt(pos) >= 0) {
         let tmpArr = str.split("");
         tmpArr.splice(pos, char.length, char);
         return tmpArr.join('');
-    }
+    // }
 }
