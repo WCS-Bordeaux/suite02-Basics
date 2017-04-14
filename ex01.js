@@ -13,7 +13,7 @@
 
 */
 
-function getCharAr(theString, theIndex) {
+function getCharAt(theString, theIndex) {
 
     if(parseInt(theIndex) <= theString.length) {
 
